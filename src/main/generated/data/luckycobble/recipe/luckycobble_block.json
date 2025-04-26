@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "abc",
+    "bdb",
+    "cba"
+  ],
+  "key": {
+    "a": {
+      "item": "cobblemon:ultra_ball"
+    },
+    "b": {
+      "item": "cobblemon:great_ball"
+    },
+    "c": {
+      "item": "cobblemon:master_ball"
+    },
+    "d": {
+      "item": "minecraft:dispenser"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "luckycobble:luckycobble_block"
+  }
+}

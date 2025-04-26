@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "luckycobble",
+	"version": "${version}",
+	"name": "LuckyCobble",
+	"description": "This mod adds luckyblocks to cobblemon",
+	"authors": [
+		"Darsoon"
+	],
+
+	"license": "CC0-1.0",
+	"icon": "assets/luckycobble/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.darsoon.luckycobble.LuckyCobble"
+		],
+		"client": [
+			"com.darsoon.luckycobble.LuckyCobbleClient"
+		],
+		"fabric-datagen": [
+			"com.darsoon.luckycobble.LuckyCobbleDataGenerator"
+		]
+	},
+	"mixins": [
+		"luckycobble.mixins.json",
+		{
+			"config": "luckycobble.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+
+}
