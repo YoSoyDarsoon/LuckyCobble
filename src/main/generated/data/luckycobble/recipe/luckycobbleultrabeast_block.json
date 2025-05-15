@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "bcb",
+    "cac",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:end_crystal"
+    },
+    "b": {
+      "item": "cobblemon:beast_ball"
+    },
+    "c": {
+      "item": "cobblemon:master_ball"
+    }
+
+  },
+  "result": {
+    "count": 1,
+    "id": "luckycobble:luckycobbleultrabeast_block"
+  }
+}

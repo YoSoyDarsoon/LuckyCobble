@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "bbb",
+    "bab",
+    "bbb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:nether_star"
+    },
+    "b": {
+      "item": "cobblemon:master_ball"
+    }
+
+  },
+  "result": {
+    "count": 1,
+    "id": "luckycobble:luckycobblegendary_block"
+  }
+}

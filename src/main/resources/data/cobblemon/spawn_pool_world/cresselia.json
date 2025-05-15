@@ -1,0 +1,43 @@
+{
+    "enabled": "true",
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "cresselia-1",
+            "pokemon": "cresselia",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 2.93,
+            "condition": {
+                "biomes": [
+                    "minecraft:cherry_grove"
+                ],
+				"moonPhase": 4
+            }
+        },        
+        {
+            "id": "cresselia-2",
+            "pokemon": "cresselia",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 2.93,
+            "condition": {
+                "biomes": [
+                    "minecraft:cherry_grove"
+                ],
+				"moonPhase": 6
+            }
+        } 
+    ]
+}

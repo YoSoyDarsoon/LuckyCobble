@@ -1,0 +1,48 @@
+{
+  "portraitScale": 1.6,
+  "portraitTranslation": [ 0, 0.1, 0 ],
+  "profileScale": 1.2,
+  "profileTranslation": [ 0, 0.25, 0 ],
+  "animations": {
+	"faint": "q.bedrock_primary('carbink', 'faint')",
+	"cry": "q.bedrock_stateful('carbink', 'cry')"
+  },
+  "poses": {
+    "standing": {
+      "poseName": "standing",
+      "poseTypes": ["STAND","NONE","PORTRAIT","PROFILE"],
+      "animations": [ "q.look('head')", "q.bedrock('carbink', 'air_idle')"],
+		"quirks": [ "q.bedrock_quirk('carbink', 'blink', 5, 12)"]
+    },
+    "walking": {
+        "poseName": "walking",
+        "poseTypes": [ "WALK" ],
+        "animations": [ "q.bedrock('carbink', 'air_walk')" ],
+        "quirks": [ "q.bedrock_quirk('carbink', 'blink', 5, 12)"]
+	},
+	"battle-idle": {
+        "poseName": "battle-idle",
+        "poseTypes": [ "STAND" ],
+        "animations": [ "q.bedrock('carbink', 'air_idle')" ],
+		"quirks": [ "q.bedrock_quirk('carbink', 'blink', 5, 12)"]
+	},
+	"flying": {
+      "poseName": "flying",
+      "transformTicks": 10,
+      "poseTypes": [ "FLY" ],
+      "animations": [ "q.bedrock('carbink', 'air_walk')" ],
+      "quirks": [ "q.bedrock_quirk('carbink', 'blink', 5, 12)"]
+    },
+	"sleeping": {
+      "poseName": "sleeping",
+      "poseTypes": [ "SLEEP" ],
+      "animations": [ "q.bedrock('carbink', 'sleep')" ]
+    },
+	"hovering": {
+      "poseName": "hovering",
+      "poseTypes": [ "HOVER" ],
+      "animations": [ "q.bedrock('carbink', 'air_idle')" ],
+		"quirks": [ "q.bedrock_quirk('carbink', 'blink', 5, 12)"]
+      }
+    }
+  }

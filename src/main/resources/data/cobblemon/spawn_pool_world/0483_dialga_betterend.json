@@ -1,0 +1,28 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "dialga-1",
+            "pokemon": "dialga",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70",
+            "weight": 0.4,
+            "condition": {
+                "biomes": [
+                    "betterend:foggy_mushroomland"
+                    
+
+                ]
+            }
+        }
+
+    ]
+}

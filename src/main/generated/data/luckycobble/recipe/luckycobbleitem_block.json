@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "bcb",
+    "aba"
+  ],
+  "key": {
+    "a": {
+      "item": "cobblemon:ultra_ball"
+    },
+    "b": {
+      "item": "minecraft:diamond"
+    },
+    "c": {
+      "item": "minecraft:ancient_debris"
+    }
+
+  },
+  "result": {
+    "count": 1,
+    "id": "luckycobble:luckycobbleitem_block"
+  }
+}

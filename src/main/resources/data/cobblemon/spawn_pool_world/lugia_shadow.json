@@ -1,0 +1,42 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "lugia-shadow-1",
+      "pokemon": "lugia shadow",
+      "presets": [
+        "underwater"
+      ],
+      "type": "pokemon",
+      "context": "submerged",
+      "bucket": "ultra-rare",
+      "level": "70",
+      "weight": 0.5,
+      "condition": {
+        "canSeeSky": true,
+        "biomes": [
+          "minecraft:warm_ocean"
+        ]
+      }
+    },
+    {
+      "id": "lugia-shadow-2",
+      "pokemon": "lugia shadow",
+      "presets": [
+        "underwater"
+      ],
+      "type": "pokemon",
+      "context": "submerged",
+      "bucket": "ultra-rare",
+      "level": "70",
+      "weight": 0.5,
+      "condition": {
+        "biomes": [
+          "#minecraft:is_ocean"
+        ]
+      }
+    }
+  ]
+}

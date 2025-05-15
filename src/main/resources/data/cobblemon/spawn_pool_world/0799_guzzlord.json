@@ -1,0 +1,56 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "guzzlord-1",
+            "pokemon": "guzzlord",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "55-65",
+            "weight": 1.0,
+            "condition": {
+                "canSeeSky": true,
+                "biomes": [
+                    "minecraft:swamp",
+                    "minecraft:mangrove_swamp",
+                    "minecraft:badlands"
+                 ]
+            }
+        },
+        {
+            "id": "guzzlord-2",
+            "pokemon": "guzzlord",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70-75",
+            "weight": 1.0,
+            "condition": {
+                "canSeeSky": false,
+                "biomes": [
+                    "minecraft:deep_dark",
+                    "terralith:cave/andesite_caves",
+                    "terralith:cave/infested_caves",
+                    "terralith:cave/thermal_caves",
+                    "terralith:cave/crystal_caves",
+                    "terralith:cave/deep_caves",
+                    "terralith:cave/mantle_caves",
+                    "terralith:cave/tuff_caves",
+                    "minecraft:soul_sand_valley",
+                    "incendium:toxic_heap",
+                    "nullscape:shadowlands",
+                    "nullscape:void_barrens"
+                ]
+            }
+        }
+    ]
+}

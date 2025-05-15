@@ -1,0 +1,30 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "cosmog-1",
+            "pokemon": "cosmog",
+            "presets": [
+                "natural",
+                "wild"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "10",
+            "weight": 0.4,
+            "condition": {
+                "biomes": [
+                    "#minecraft:is_end"
+                
+
+                    
+
+                ]
+            }
+        }
+
+    ]
+}

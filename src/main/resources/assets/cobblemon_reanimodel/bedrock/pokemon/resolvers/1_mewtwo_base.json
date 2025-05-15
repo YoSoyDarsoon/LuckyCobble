@@ -1,0 +1,27 @@
+{
+  "species": "cobblemon:mewtwo",
+  "order": 1,
+  "baseScale": 0.75,
+  "hitbox": {
+    "width": 0.5,
+    "height": 2,
+    "fixed": false
+  },
+  "variations": [
+    {
+      "aspects": [],
+      "poser": "cobblemon_reanimodel:mewtwo",
+      "model": "cobblemon_reanimodel:mewtwo.geo",
+      "texture": "cobblemon_reanimodel:textures/pokemon/mewtwo/mewtwo.png",
+      "layers": [
+      ] 
+    },
+    {
+      "aspects": ["shiny"],
+      "texture": "cobblemon_reanimodel:textures/pokemon/mewtwo/mewtwo_shiny.png",
+      "layers": [
+       
+      ]
+    }
+  ]
+}

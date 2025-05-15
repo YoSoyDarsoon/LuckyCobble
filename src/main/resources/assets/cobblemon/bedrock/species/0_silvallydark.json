@@ -1,0 +1,23 @@
+{
+  "species": "cobblemon:silvally",
+  "order": 0,
+  "variations": [
+    {
+      "aspects": ["dark-memory"],
+      "poser": "cobblemon:silvally",
+      "model": "cobblemon:silvally.geo",
+      "texture": "cobblemon:textures/pokemon/silvally/silvally.png",
+      "layers": [
+        {
+          "name": "color",
+          "texture": "cobblemon:textures/pokemon/silvally/silvally_emissivedark.png",
+          "emissive": true
+        }
+      ]
+    },
+    {
+      "aspects": [ "shiny" ],
+      "texture": "cobblemon:textures/pokemon/silvally/silvally_shiny.png"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "luckycobble:block/luckycobbleitem_block"
+    }
+  }
+}

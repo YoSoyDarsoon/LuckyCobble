@@ -1,0 +1,15 @@
+{
+  "pokemon.darkrai.ambient":{
+     "sounds":[
+        "cobblemon:pokemon/darkrai/darkrai_ambient"
+     ]
+  },
+  "pokemon.darkrai.cry":{
+     "sounds":[
+        {
+           "name":"cobblemon:pokemon/darkrai/darkrai_cry",
+           "volume":0.8
+        }
+     ]
+  }
+}

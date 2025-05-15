@@ -1,0 +1,43 @@
+{
+    "enabled": true,
+    "neededInstalledMods": [],
+    "neededUninstalledMods": [],
+    "spawns": [
+        {
+            "id": "lugia-1",
+            "pokemon": "lugia",
+            "presets": [
+                "underwater"
+            ],
+            "type": "pokemon",
+            "context": "submerged",
+            "bucket": "ultra-rare",
+            "level": "70-80",
+            "weight": 1,
+            "condition": {
+                "biomes": [
+                    "#minecraft:is_deep_ocean"
+                ],
+            "maxY": 80
+    }
+},
+         {
+            "id": "lugia-2",
+            "pokemon": "lugia",
+            "presets": [
+                "natural"
+            ],
+            "type": "pokemon",
+            "context": "grounded",
+            "bucket": "ultra-rare",
+            "level": "70-80",
+            "weight": 1,
+            "condition": {
+                "biomes": [
+                    "#cobblemon:is_coast"
+                ],
+                "maxY": 80
+			}
+        }
+  ]
+}
