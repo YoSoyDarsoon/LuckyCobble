@@ -1,3 +1,9 @@
-// 1.21.1	2025-04-25T21:08:14.6885425	LuckyCobble/Recipes
+// 1.21.1	2025-05-15T17:18:49.3424464	LuckyCobble/Recipes
 18b1d2e955286843c600bff3bf5a58b262404908 data\luckycobble\advancement\recipes\brewing\luckycobble_block.json
+9bc9bb108df8ff825760982be0706c8b96a520a5 data\luckycobble\advancement\recipes\brewing\luckycobbleitem_block.json
+9df90c95f99dd0a01664851166aab457e8fe1448 data\luckycobble\advancement\recipes\brewing\luckycobbleultrabeast_block.json
+e714405707787df3074649f49777fa171d476600 data\luckycobble\recipe\luckycobblegendary_block.json
 e333c04a723fa039fb5534e87c3bf3929b60bbf5 data\luckycobble\recipe\luckycobble_block.json
+0fd328539ee6c8a0d5325343f12b3a98b6199984 data\luckycobble\recipe\luckycobbleitem_block.json
+f37ccf936f82e45d9c6c3f57e0d8bd3fb157487b data\luckycobble\recipe\luckycobbleultrabeast_block.json
+3efe13cd1e1bba673d1f56cdbd210066649f048c data\luckycobble\advancement\recipes\brewing\luckycobblegendary_block.json

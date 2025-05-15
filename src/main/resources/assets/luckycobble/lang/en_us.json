@@ -1,4 +1,9 @@
 {
   "itemGroup.luckycobble.luckycobble_group": "LuckyCobble",
-  "block.luckycobble.luckycobble_block": "LuckyCobble"
+  "block.luckycobble.luckycobble_block": "LuckyCobble",
+  "block.luckycobble.luckycobblegendary_block": "Lengendary LuckyCobble",
+  "block.luckycobble.luckycobbleultrabeast_block": "Ultrabeast LuckyCobble",
+  "block.luckycobble.luckycobbleitem_block": "Item LuckyCobble",
+  "tag.item.luckycobble.lucky_drops": "Lucky Drops"
+
 }

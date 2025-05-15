@@ -15,7 +15,12 @@ public class DatagenModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
          blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LUCKYCOBBLE_BLOCK.getLeft());
+         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LUCKYCOBBLE_BLOCK_LEGENDARY.getLeft());
+         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LUCKYCOBBLE_BLOCK_ULTRABEAST.getLeft());
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LUCKYCOBBLE_BLOCK_ITEM.getLeft());
+
     }
+
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {

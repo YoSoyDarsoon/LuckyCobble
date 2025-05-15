@@ -14,23 +14,28 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 
 import java.util.Random;
+import java.util.Set;
 import java.util.WeakHashMap;
+import java.util.Collections;
 
-public class LuckyCobbleBlock extends Block {
+public class LuckyCobbleUltraBeastBlock extends Block {
 
-    //    // Simple in-memory tracker to avoid double execution
-    private static final WeakHashMap<World, java.util.Set<BlockPos>> recentlyUsed = new WeakHashMap<>();
+    private static final WeakHashMap<World, Set<BlockPos>> recentlyUsed = new WeakHashMap<>();
+    private static final String[] ULTRABEASTS = {
+            "Nihilego", "Buzzwole", "Pheromosa", "Xurkitree",
+            "Celesteela", "Kartana", "Guzzlord", "Poipole",
+            "Naganadel", "Stakataka", "Blacephalon"
+    };
 
-    public LuckyCobbleBlock(Settings settings) {
+    public LuckyCobbleUltraBeastBlock(Settings settings) {
         super(settings);
     }
 
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
         if (!world.isClient) {
-            spawnRandomPokemon(world, pos);
-            // Mark position as handled
-            recentlyUsed.computeIfAbsent(world, w -> java.util.Collections.newSetFromMap(new java.util.WeakHashMap<>())).add(pos);
+            spawnLegendaryPokemon(world, pos);
+            recentlyUsed.computeIfAbsent(world, w -> Collections.newSetFromMap(new WeakHashMap<>())).add(pos);
             world.breakBlock(pos, false);
         }
         return ActionResult.SUCCESS;
@@ -40,17 +45,19 @@ public class LuckyCobbleBlock extends Block {
     public void onBroken(WorldAccess world, BlockPos pos, BlockState state) {
         if (!world.isClient()) {
             World serverWorld = (World) world;
-            java.util.Set<BlockPos> used = recentlyUsed.get(serverWorld);
+            Set<BlockPos> used = recentlyUsed.get(serverWorld);
             if (used == null || !used.remove(pos)) {
-                spawnRandomPokemon(serverWorld, pos);
+                spawnLegendaryPokemon(serverWorld, pos);
             }
         }
         super.onBroken(world, pos, state);
     }
 
-    private void spawnRandomPokemon(World world, BlockPos pos) {
-        int level = new Random().nextInt(100) + 1;
-        String command = "/pokespawn random lvl=" + level;
+    private void spawnLegendaryPokemon(World world, BlockPos pos) {
+        Random rand = new Random();
+        int level = rand.nextInt(100) + 1;
+        String pokemon = ULTRABEASTS[rand.nextInt(ULTRABEASTS.length)];
+        String command = "/pokespawn " + pokemon + " lvl=" + level;
 
         ServerCommandSource source = new ServerCommandSource(
                 world.getServer(),

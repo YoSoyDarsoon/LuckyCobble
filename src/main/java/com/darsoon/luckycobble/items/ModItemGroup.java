@@ -18,6 +18,9 @@ public class ModItemGroup {
                     .icon(() -> new ItemStack(ModBlocks.LUCKYCOBBLE_BLOCK.getLeft().asItem()))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.LUCKYCOBBLE_BLOCK.getLeft().asItem());
+                        entries.add(ModBlocks.LUCKYCOBBLE_BLOCK_LEGENDARY.getLeft().asItem());
+                        entries.add(ModBlocks.LUCKYCOBBLE_BLOCK_ULTRABEAST.getLeft().asItem());
+                        entries.add(ModBlocks.LUCKYCOBBLE_BLOCK_ITEM.getLeft().asItem());
                     })
                     .build()
     );

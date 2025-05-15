@@ -18,5 +18,9 @@ public class DatagenRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter exporter) {
      offerCompactingRecipe(exporter, RecipeCategory.BREWING, ModBlocks.LUCKYCOBBLE_BLOCK.getLeft(), Items.STICK);
+        offerCompactingRecipe(exporter, RecipeCategory.BREWING, ModBlocks.LUCKYCOBBLE_BLOCK_LEGENDARY.getLeft(), Items.ACACIA_BOAT);
+        offerCompactingRecipe(exporter, RecipeCategory.BREWING, ModBlocks.LUCKYCOBBLE_BLOCK_ITEM.getLeft(), Items.SALMON);
+     offerCompactingRecipe(exporter, RecipeCategory.BREWING, ModBlocks.LUCKYCOBBLE_BLOCK_ULTRABEAST.getLeft(), Items.SADDLE);
     }
+
 }
